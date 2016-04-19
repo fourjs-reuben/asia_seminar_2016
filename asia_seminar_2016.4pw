@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="-75168104" gstVersion="3001c" version="3.1">
+<Project defaultApplication="-1042896196" gstVersion="3001c" version="3.1">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -106,11 +106,33 @@
       <Application binaryName="51_wc_browser" id="104400924" label="51_wc_browser"/>
       <Application binaryName="52_wc_api" id="-701679319" label="52_wc_api"/>
       <Application binaryName="61_generic_ui" id="778322764" label="61_generic_ui"/>
+      <Application binaryName="99_on_selection_change" id="1117022272" label="99_on_selection_change">
+        <File filePath="on_selection_change.4gl"/>
+        <File filePath="on_selection_change.per"/>
+      </Application>
+      <Application binaryName="99_sort_method" id="1424730713" label="99_sort_method">
+        <File filePath="sort_method.4gl"/>
+        <File filePath="sort_method.per"/>
+        <File filePath="sort_method.unl"/>
+      </Application>
+      <Application binaryName="99_sort_on_fill_buffer" id="1593658916" label="99_sort_on_fill_buffer">
+        <File filePath="sort_on_fill_buffer.4gl"/>
+        <File filePath="sort_on_fill_buffer.per"/>
+      </Application>
+      <Application binaryName="99_sort_on_sort" id="-1042896196" label="99_sort_on_sort">
+        <File filePath="on_sort.4gl"/>
+        <File filePath="on_sort.per"/>
+      </Application>
     </Group>
     <Group label="02_mobile" language="Genero">
       <Application binaryName="01_stack_grid" id="-323681164" label="01_stack_grid"/>
       <Application binaryName="11_fab" id="2006591796" label="11_fab"/>
       <Application binaryName="21_runonserver" id="-1193260360" label="21_runonserver"/>
+    </Group>
+    <Group label="03_web_server">
+      <Application binaryName="99_html_generator" environment="value:FGLAPPSERVER=8095" id="1250519696" label="99_html_generator">
+        <File filePath="simplepagegenerator.4gl"/>
+      </Application>
     </Group>
   </Group>
 </Project>

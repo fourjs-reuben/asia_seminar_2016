@@ -1,0 +1,22 @@
+LAYOUT (TEXT="Olympic Medal Table")
+TABLE (UNSORTABLECOLUMNS)
+{
+[f01              |f02  |f03  |f04  ]
+[f01              |f02  |f03  |f04  ]
+[f01              |f02  |f03  |f04  ]
+[f01              |f02  |f03  |f04  ]
+[f01              |f02  |f03  |f04  ]
+}
+END
+END
+ATTRIBUTES
+LABEL f01 = formonly.country, TITLE="Country";
+f02 = formonly.gold, TITLE="Gold";
+f03 = formonly.silver, TITLE="Silver";
+f04 = formonly.bronze, TITLE="Bronze";
+PHANTOM formonly.total;
+INSTRUCTIONS 
+SCREEN RECORD scr(country, gold, silver, bronze, total);
+
+
+

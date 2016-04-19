@@ -1,0 +1,17 @@
+LAYOUT (TEXT="ON SORT example")
+TABLE
+{
+[f01      |f02       |f03       ]
+[f01      |f02       |f03       ]
+[f01      |f02       |f03       ]
+[f01      |f02       |f03       ]
+[f01      |f02       |f03       ]
+}
+END
+END
+ATTRIBUTES
+f01 = formonly.code, TITLE="Code";
+f02 = formonly.amt, TITLE="Amount";
+f03 = formonly.running_total, TITLE="Running Total", UNSORTABLE;
+INSTRUCTIONS 
+SCREEN RECORD scr(code, amt, running_total)
