@@ -1,0 +1,26 @@
+LAYOUT (TEXT="DateTimeEdit Widget")
+VBOX
+GROUP (TEXT="New DateTimeEdit Widget")
+GRID
+{
+Datetime Year To Minute  [f01                ]
+Datetime Year To Seconds [f02                ]  
+}
+END
+END
+GROUP (TEXT="Old Edit Widget Technique")
+GRID
+{
+Datetime Year To Minute  [f03                ]
+Datetime Year To Seconds [f04                ]
+                          yyyy-mm-dd hh:mm:ss
+}
+END
+END
+END
+ATTRIBUTES
+
+DATETIMEEDIT f01 = formonly.yyyymmddhhmm;
+DATETIMEEDIT f02 = formonly.yyyymmddhhmmss;
+f03 = formonly.yyyymmddhhmm_old;
+f04 = formonly.yyyymmddhhmmss_old;
