@@ -1,0 +1,19 @@
+LAYOUT (TEXT="SCROLLGRID will vary with page size", MINHEIGHT= 10 )
+SCROLLGRID (WANTFIXEDPAGESIZE=NO)
+{
+[l01 |f01       |l02          ][f02                                   ]
+                               [                                      ]
+                               [                                      ]
+}
+END
+END
+ATTRIBUTES
+LABEL l01 = formonly.lbl_code;
+LABEL l02 = formonly.lbl_desc;
+
+EDIT f01 = formonly.code;
+TEXTEDIT f02 = formonly.desc, SIZEPOLICY=FIXED;
+
+INSTRUCTIONS 
+SCREEN RECORD scr(lbl_code, code, lbl_desc, desc);
+    
