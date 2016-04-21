@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="-323681164" gstVersion="3001c" version="3.1">
+<Project defaultApplication="2006591796" gstVersion="3001c" version="3.1">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -137,7 +137,11 @@
         <File filePath="stack.per"/>
         <File filePath="stack_and_grid.4gl"/>
       </Application>
-      <Application binaryName="11_fab" id="2006591796" label="11_fab"/>
+      <Application binaryName="11_fab" id="2006591796" label="11_fab">
+        <File filePath="fab.4gl"/>
+        <File filePath="fab.4st"/>
+        <File filePath="fab.per"/>
+      </Application>
       <Application binaryName="21_runonserver" id="-1193260360" label="21_runonserver"/>
     </Group>
     <Group label="03_web_server">
