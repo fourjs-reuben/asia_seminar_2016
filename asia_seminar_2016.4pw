@@ -107,7 +107,9 @@
         <File filePath="blank.4gl"/>
         <File filePath="blank.per"/>
       </Application>
-      <Application binaryName="52_wc_api" id="-701679319" label="52_wc_api"/>
+      <Application binaryName="52_wc_api" id="-701679319" label="52_wc_api">
+        <File filePath="wc_api.txt"/>
+      </Application>
       <Application binaryName="61_sort_method" id="1424730713" label="61_sort_method">
         <File filePath="sort_method.4gl"/>
         <File filePath="sort_method.per"/>
@@ -125,7 +127,9 @@
         <File filePath="on_selection_change.4gl"/>
         <File filePath="on_selection_change.per"/>
       </Application>
-      <Application binaryName="81_generic_ui" id="778322764" label="81_generic_ui"/>
+      <Application binaryName="81_generic_ui" id="778322764" label="81_generic_ui">
+        <File filePath="generic_ui.txt"/>
+      </Application>
     </Group>
     <Group label="02_mobile" language="Genero">
       <Application binaryName="01_stack_grid" id="-323681164" label="01_stack_grid"/>

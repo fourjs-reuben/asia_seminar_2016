@@ -1,0 +1,4 @@
+Use wc_touchpad https://github.com/FourjsGenero/wc_touchpad
+Use wc_svg https://github.com/FourjsGenero/wc_svg
+Use wc_tinymce https://github.com/FourjsGenero/wc_tinymce
+Use wc_2darray
