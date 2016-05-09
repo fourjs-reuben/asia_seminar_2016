@@ -9,7 +9,7 @@ MAIN
     CLOSE WINDOW SCREEN
     OPEN WINDOW w WITH FORM "run_on_server"
 
-    LET ip_address = "192.168.0.12"
+    LET ip_address = "127.0.0.1"
     LET port = 6395
     LET app = "PhoneDemo_reubenbarclay"
     

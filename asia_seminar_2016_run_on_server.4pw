@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Project defaultApplication="2006591796" gstVersion="3001c" version="3.1">
+<Project defaultApplication="-1607611190" gstVersion="3001c" version="3.1">
   <Settings>
     <DynamicProperties version="2">
       <DynamicProperty description="Accent color (Android 5.0 and later)" initialValue="#9575CD" isDefaultInherited="false" isHidden="false" label="Accent color" name="gma-accent-color" readOnly="false" type="COLOR"/>
@@ -53,104 +53,60 @@
   </Settings>
   <LanguageList version="1.0"/>
   <PlatformList version="1.0"/>
-  <Group label="asia_seminar_2016" language="Genero" targetDirectory="$(ProjectDir)">
-    <Group label="01_language">
-      <Application binaryName="01_fontawesesome" environment="filelist:FGLIMAGEPATH=$(ProjectDir)/my_image2font.txt;$(FGLDIR)/lib/image2font.txt;$(FGLDIR)/lib" id="145483755" label="01_fontawesesome">
-        <File filePath="fontawesome.4gl"/>
-        <File filePath="fontawesome.per"/>
-        <File filePath="my_image2font.txt"/>
-      </Application>
-      <Application binaryName="02_clickable_image_splash" id="2121742848" label="02_clickable_image_splash">
-        <File filePath="splash.4gl"/>
-        <File filePath="splash.4st"/>
-        <File filePath="splash.per"/>
-      </Application>
-      <Application binaryName="03_clickable_image_update_delete" id="-1387713485" label="03_clickable_image_update_delete">
-        <File filePath="update_delete.4gl"/>
-        <File filePath="update_delete.per"/>
-      </Application>
-      <Application binaryName="04_clickable_image_addtobasket" environment="value:FGLIMAGEPATH=/Volumes/Daily/github/fourjs-reuben/asia_seminar_2016/trunk/my_image2font.txt:$(FGLDIR)/lib/image2font.txt:$(FGLDIR)/lib" id="1760800002" label="04_clickable_image_addtobasket">
-        <File filePath="add_to_basket.4gl"/>
-        <File filePath="add_to_basket.per"/>
-      </Application>
-      <Application binaryName="05_warning_image" environment="value:FGLIMAGEPATH=/Volumes/Daily/github/fourjs-reuben/asia_seminar_2016/trunk/my_image2font.txt:$(FGLDIR)/lib/image2font.txt:$(FGLDIR)/lib" id="1080923303" label="05_warning_image">
-        <File filePath="warning_image.4gl"/>
-        <File filePath="warning_image.per"/>
-      </Application>
-      <Application binaryName="11_datetimeedit" id="-1556943044" label="11_datetimeedit">
-        <File filePath="datetimeedit.4gl"/>
-        <File filePath="datetimeedit.per"/>
-      </Application>
-      <Application binaryName="12_timeedit" id="2108478921" label="12_timeedit">
-        <File filePath="timeedit.4gl"/>
-        <File filePath="timeedit.per"/>
-      </Application>
-      <Application binaryName="21_autocomplete" id="-1384494184" label="21_autocomplete">
-        <VirtualFolder label="data">
-          <File filePath="airports.dat"/>
-          <File filePath="country.dat"/>
-        </VirtualFolder>
-        <File filePath="auto_completion.4gl"/>
-        <File filePath="auto_completion.4st"/>
-        <File filePath="auto_completion.per"/>
-      </Application>
-      <Application binaryName="31_scrollgrid" id="2073067833" label="31_scrollgrid">
-        <File filePath="scrollgrid.4gl"/>
-        <File filePath="scrollgrid_no.per"/>
-        <File filePath="scrollgrid_yes.per"/>
-      </Application>
-      <Application binaryName="41_copytext_readonly" id="-75168104" label="41_copytext_readonly">
-        <File filePath="copy_readonly.4gl"/>
-        <File filePath="copy_readonly.per"/>
-      </Application>
-      <Application binaryName="51_wc_browser" id="104400924" label="51_wc_browser">
-        <File filePath="blank.4gl"/>
-        <File filePath="blank.per"/>
-      </Application>
-      <Application binaryName="52_wc_api" id="-701679319" label="52_wc_api">
-        <File filePath="wc_api.txt"/>
-      </Application>
-      <Application binaryName="61_sort_method" id="1424730713" label="61_sort_method">
-        <File filePath="sort_method.4gl"/>
-        <File filePath="sort_method.per"/>
-        <File filePath="sort_method.unl"/>
-      </Application>
-      <Application binaryName="62_sort_on_fill_buffer" id="1593658916" label="62_sort_on_fill_buffer">
-        <File filePath="sort_on_fill_buffer.4gl"/>
-        <File filePath="sort_on_fill_buffer.per"/>
-      </Application>
-      <Application binaryName="63_sort_on_sort" id="-1042896196" label="63_sort_on_sort">
-        <File filePath="on_sort.4gl"/>
-        <File filePath="on_sort.per"/>
-      </Application>
-      <Application binaryName="71_on_selection_change" id="1117022272" label="71_on_selection_change">
-        <File filePath="on_selection_change.4gl"/>
-        <File filePath="on_selection_change.per"/>
-      </Application>
-      <Application binaryName="81_generic_ui" id="778322764" label="81_generic_ui">
-        <File filePath="generic_ui.txt"/>
-      </Application>
-    </Group>
-    <Group label="02_mobile" language="Genero">
-      <Application binaryName="01_stack_grid" id="-323681164" label="01_stack_grid">
-        <File filePath="grid.per"/>
-        <File filePath="stack.per"/>
-        <File filePath="stack_and_grid.4gl"/>
-      </Application>
-      <Application binaryName="11_fab" id="2006591796" label="11_fab">
-        <File filePath="fab.4gl"/>
-        <File filePath="fab.4st"/>
-        <File filePath="fab.per"/>
-      </Application>
-      <Application binaryName="21_runonserver" id="-1193260360" label="21_runonserver">
-        <File filePath="run_on_server.4gl"/>
-        <File filePath="run_on_server.per"/>
-      </Application>
-    </Group>
-    <Group label="03_web_server">
-      <Application binaryName="99_html_generator" environment="value:FGLAPPSERVER=8095" id="1250519696" label="99_html_generator">
-        <File filePath="simplepagegenerator.4gl"/>
-      </Application>
-    </Group>
+  <Group label="Packages" language="Genero">
+    <Package binaryName="MyApp_Android_arm" dependencies="400358049||781919164||159917928||212784684||715422167||362164715||313644474" description="Android Package (arm)" label="MyApp_Android_arm" platform="Android (arm)">
+      <DynamicProperty name="packageId" value="com.company.myapp"/>
+      <DynamicProperty name="packageLabel" value="MyApp"/>
+      <DynamicProperty name="packageName" value="MyApp"/>
+      <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
+      <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin" includedFiles="fglprofile" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
+      <Directory description="Database" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
+      <Directory description="Images" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.png *.jpg" label="Images" sourceDirectory="$(ProjectDir)/images"/>
+      <Directory description="Studio Library" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="libgst" recursive="false" sourceDirectory="$(GSTLIBRARYDIR)/bin"/>
+      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad *.4st" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
+      <Directory description="Web Components" destinationDirectory="$(ProjectDir)/bin" label="Webcomponents" recursive="false" sourceDirectory="$(ProjectDir)/webcomponents"/>
+    </Package>
+    <Package binaryName="MyApp_Android_x86" dependencies="400358049||781919164||159917928||212784684||715422167||362164715||313644474" description="Android Package (x86)" label="MyApp_Android_x86" platform="Android (x86)">
+      <DynamicProperty name="packageId" value="com.company.myapp"/>
+      <DynamicProperty name="packageLabel" value="MyApp"/>
+      <DynamicProperty name="packageName" value="MyApp"/>
+      <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
+      <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin" includedFiles="fglprofile" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
+      <Directory description="Database" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
+      <Directory description="Images" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.png *.jpg" label="Images" sourceDirectory="$(ProjectDir)/images"/>
+      <Directory description="Studio Library" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="libgst" recursive="false" sourceDirectory="$(GSTLIBRARYDIR)/bin"/>
+      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad *.4st" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
+      <Directory description="Web Components" destinationDirectory="$(ProjectDir)/bin" label="Webcomponents" recursive="false" sourceDirectory="$(ProjectDir)/webcomponents"/>
+    </Package>
+    <Package binaryName="MyApp_iOS" dependencies="400358049||781919164||159917928||212784684||715422167||362164715||313644474" description="iOS Package" label="MyApp_iOS" platform="iOS">
+      <DynamicProperty name="packageId" value="com.company.myapp"/>
+      <DynamicProperty name="packageLabel" value="MyApp"/>
+      <DynamicProperty name="packageName" value="MyApp"/>
+      <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
+      <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin" includedFiles="fglprofile" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
+      <Directory description="Database" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
+      <Directory description="Images" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.png *.jpg" label="Images" sourceDirectory="$(ProjectDir)/images"/>
+      <Directory description="Studio Library" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="libgst" recursive="false" sourceDirectory="$(GSTLIBRARYDIR)/bin"/>
+      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad *.4st" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
+      <Directory description="Web Components" destinationDirectory="$(ProjectDir)/bin" label="Webcomponents" recursive="false" sourceDirectory="$(ProjectDir)/webcomponents"/>
+    </Package>
+    <Package binaryName="MyApp_iOS_Simulator" dependencies="400358049||781919164||159917928||212784684||715422167||362164715||313644474" description="iOS Simulator Package" label="MyApp_iOS_Simulator" platform="iOS Simulator">
+      <DynamicProperty name="packageId" value="com.bluejs.runonserverexample"/>
+      <DynamicProperty name="packageLabel" value="RunOnServer"/>
+      <DynamicProperty name="packageName" value="RunOnServer"/>
+      <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
+      <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin" includedFiles="fglprofile" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
+      <Directory description="Database" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
+      <Directory description="Images" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.png *.jpg" label="Images" sourceDirectory="$(ProjectDir)/images"/>
+      <Directory description="Studio Library" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="libgst" recursive="false" sourceDirectory="$(GSTLIBRARYDIR)/bin"/>
+      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad *.4st" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
+      <Directory description="Web Components" destinationDirectory="$(ProjectDir)/bin" label="Webcomponents" recursive="false" sourceDirectory="$(ProjectDir)/webcomponents"/>
+    </Package>
+  </Group>
+  <Group environment="filelist:FGLPROFILE=$(ProjectDir)/config/fglprofile||dirlist:DBPATH=$(ProjectDir)/database;$(DBPATH)" label="Project" language="Genero">
+    <Application binaryName="run_on_server" id="-1607611190" label="run_on_server">
+      <File filePath="run_on_server.4gl"/>
+      <File filePath="run_on_server.per"/>
+    </Application>
   </Group>
 </Project>
