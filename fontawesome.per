@@ -1,4 +1,5 @@
 LAYOUT (TEXT="FontAwesome Image Viewer", MINWIDTH=80, MINHEIGHT=25)
+VBOX
 HBOX
 TABLE
 {
@@ -16,6 +17,11 @@ GRID
 }
 END
 END
+TABLE (STYLE="pictureflow")
+{
+[p01                 ]
+}
+END
 END
 
 ATTRIBUTES
@@ -24,5 +30,7 @@ EDIT f02 = formonly.code, TITLE="Code";
 IMAGE f03 = formonly.img, TITLE="Image", AUTOSCALE;
 
 IMAGE i01 = formonly.img2, STRETCH=BOTH, AUTOSCALE, HEIGHT=150 PIXELS, WIDTH=150 PIXELS;
+IMAGE p01 = formonly.img3;
 INSTRUCTIONS
 SCREEN RECORD scr(imagename, code, img);
+SCREEN RECORD scr3(img3);

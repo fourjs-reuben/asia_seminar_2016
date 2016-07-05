@@ -5,20 +5,30 @@ DEFINE arr DYNAMIC ARRAY OF RECORD
     code STRING,
     img STRING
 END RECORD
+DEFINE arr3 DYNAMIC ARRAY OF RECORD
+    img3 STRING
+END RECORD
 MAIN
 
+    CALL ui.Interface.loadStyles("fontawesome.4st")
     DISPLAY FGL_GETENV("FGLIMAGEPATH")
     CALL add_images_to_array(SFMT("%1%2lib%2image2font.txt",FGL_GETENV("FGLDIR"), os.Path.separator()))
     CALL add_images_to_array("my_image2font.txt")
     
     CLOSE WINDOW SCREEN
     OPEN WINDOW w WITH FORM "fontawesome"
-    DISPLAY ARRAY arr TO scr.*
-        BEFORE DISPLAY
-            MESSAGE "Custom Images from my_image2font.txt are at end of list"
-        BEFORE ROW
-            DISPLAY arr[arr_curr()].img TO img2
-    END DISPLAY
+    DIALOG
+        DISPLAY ARRAY arr TO scr.*
+            BEFORE DISPLAY
+                MESSAGE "Custom Images from my_image2font.txt are at end of list"
+            BEFORE ROW
+                DISPLAY arr[arr_curr()].img TO img2
+        END DISPLAY
+        DISPLAY ARRAY arr3 TO scr3.*
+        END DISPLAY
+        ON ACTION close
+            EXIT DIALOG
+    END DIALOG
 END MAIN
 
 
@@ -47,6 +57,8 @@ DEFINE equal_pos, colon_pos STRING
         LET arr[arr.getLength()].img = arr[arr.getLength()].imagename
 
         LET arr[arr.getLength()].code = line.subString(colon_pos+1, line.getLength())
+
+        LET arr3[arr.getLength()].img3 = arr[arr.getLength()].imagename
     END WHILE
     CALL ch.close()
 END FUNCTION
